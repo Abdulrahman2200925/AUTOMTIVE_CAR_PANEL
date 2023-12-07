@@ -15,6 +15,7 @@ void updateDutyCycle(u8 dutyCycle, u8* lastDutyCycle, u8 mode);
  u8 GET_AC_MODE(void);
 void initializeMotor(u8 mode, DCMOTOR_CONFIG* motorConfig, u8* lastDutyCycleCool, u8* lastDutyCycleHeat, u8* initializedCool, u8* initializedHeat);
 void operateMotor(u8 mode, DCMOTOR_CONFIG* motorConfig, u8* lastDutyCycleCool, u8* lastDutyCycleHeat);
+void EEPROM_voidResetByte(u16 Copy_u16LocationAddress);
 
 
 
