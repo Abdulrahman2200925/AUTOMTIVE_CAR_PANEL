@@ -142,11 +142,11 @@ void temp_lm35(void) {
 	DisplayTemperatureOnLCD(LM35_TEMP); // Display the temperature on the LCD
 	tempLimit2 = EEPROM_u8ReadDataByte(EEPROM_TEMP_LIMIT_ADDRESS);
 	if (tempLimit2 >LM35_TEMP  ) {
-		// Turn on the buzzer
+		// Turn OFF the buzzer
 		DIO_u8SetPinValue(DIO_PORTB, DIO_PIN5, DIO_PIN_LOW);
 		
 		} else {
-		// Turn off the buzzer
+		// Turn ON the buzzer
 		DIO_u8SetPinValue(DIO_PORTB, DIO_PIN5, DIO_PIN_HIGH);
 	}
 	
