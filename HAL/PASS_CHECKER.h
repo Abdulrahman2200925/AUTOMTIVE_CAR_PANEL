@@ -17,12 +17,12 @@ void SETGUEST_PASS(void);
 void ADMIN_Password(void) ;
 void setTempLimit(void);
 void GUEST_Password(void);
-u8 SELECT_MODE(void) ;
+u8 GUEST_MODE(void);
 u8 AdminFeatures(void);
 u8 GuestFeatures(void) ;
 u8 ADMIN_MODE(void) ;
-
-u8 GUEST_MODE(void);
+u8 SELECT_MODE(void) ;
+void EEPROM_voidResetAddress(u16 Copy_u16LocationAddress, u16 Copy_u16BlockSize);
 
 
 
