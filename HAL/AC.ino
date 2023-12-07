@@ -138,3 +138,10 @@ void operateMotor(u8 mode, DCMOTOR_CONFIG* motorConfig, u8* lastDutyCycleCool, u
 		}
 	}
 }
+
+void EEPROM_voidResetByte(u16 Copy_u16LocationAddress) {
+	u8 resetValue = 0xFF;  // Value to write to the memory location
+
+	// Use EEPROM_voidSendDataByte to write the default value to the specified address
+	EEPROM_voidSendDataByte(Copy_u16LocationAddress, resetValue);
+}
