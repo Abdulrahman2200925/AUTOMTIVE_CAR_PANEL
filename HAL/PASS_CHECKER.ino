@@ -391,3 +391,12 @@ u8 SELECT_MODE(void) {
 	}
 	LCD_voidClearScreen();
 }
+
+void EEPROM_voidResetAddress(u16 Copy_u16LocationAddress, u16 Copy_u16BlockSize) {
+	u8 resetValue = 0xFF; // Value to write to each memory location
+
+	// Create an array with the default reset value
+	u8 resetData[PASSWORD_LENGTH];
+	for (u16 i = 0; i < PASSWORD_LENGTH; i++) {
+		resetData[i] = resetValue;
+	}
