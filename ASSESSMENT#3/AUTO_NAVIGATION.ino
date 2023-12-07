@@ -33,7 +33,14 @@ int main(void) {
 	  LCD_initI2C();
 	  KPD_Init();
 	  TIMER2_voidInit();
-	  
+	/*
+	 EEPROM_voidResetAddress(password_location , PASSWORD_LENGTH); // to reset the locations inside the EEPROM
+	 EEPROM_voidResetAddress(password_guest_location , PASSWORD_LENGTH);
+	 EEPROM_voidResetAddress(EEPROM_TEMP_LIMIT_ADDRESS , PASSWORD_LENGTH);
+	
+	 EEPROM_voidResetByte(cool_readings_address);
+	 EEPROM_voidResetByte(heat_readings_address );
+	*/
 	  
 	
     
